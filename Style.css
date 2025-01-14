@@ -1,0 +1,205 @@
+li:hover {
+  background-color: #3a457e !important;
+}
+
+li {
+  font-size: 12px;
+}
+
+.sidemenu,
+.sidemenu a,
+.Dashboard,
+.Dashboard a,
+.Task,
+.Task a,
+.Requests,
+.Requests a,
+.Admin,
+.Admin a,
+.Apps,
+.Apps a,
+.Help,
+.Help a,
+.Setting,
+.Setting a {
+  color: #acafb5 !important;
+  cursor: pointer;
+}
+
+.selected {
+  border-color: #fff !important;
+  color: #fff !important;
+  font-weight: bold !important;
+}
+
+.sidemenu-container .selected a {
+  color: #fff !important;
+}
+
+.ViewLayout {
+  margin: -7px 0px 0px 0px !important;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+* {
+  font-family: "Poppins" !important;
+  --view-background-color: #fff;
+  --bg-primary: #2b3982;
+  --bg-secondary: #3a457e;
+  --color-column-header-text: #9699b9;
+  --color-table-col-text: #9699b9;
+  --bg-form: #edeef8;
+  --bg-selected-line: #ebedf5;
+  --border-color-table: #f0f0f0;
+}
+
+.grid * {
+  border-width: 0px !important;
+}
+
+html {
+  background-color: var(--bg-primary);
+}
+
+body {
+  /* Style du scrollbar */
+  ::-webkit-scrollbar {
+    width: 4px;
+    background-color: var(--bg-primary);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--bg-secondary);
+  }
+}
+
+/* Styles des tableaux */
+tr {
+  background-color: white !important;
+}
+
+tr.highlighted.selected > td,
+tr.selected > td,
+table.grid-content-table > tbody > tr:hover > td {
+  background-color: var(--bg-selected-line) !important;
+}
+
+tr.highlighted.selected > td > div > div > span.runtime-list-item,
+tr.highlighted.selected > td > div > div > span.runtime-list-item-wrap,
+tr.selected > td > div > div > span.runtime-list-item,
+tr.selected > td > div > div > span.runtime-list-item-wrap {
+  color: var(--bg-primary) !important;
+}
+
+td {
+  border-width: 0 !important;
+}
+
+.grid-column-header-table td {
+  border-bottom: 1px solid var(--border-color-table) !important;
+}
+
+/* En-têtes */
+.grid-header,
+.grid-header-wrapper,
+.grid-header-text {
+  height: 50px !important;
+  display: flex;
+  padding: 10px 0 0 4px !important;
+  font-weight: bold !important;
+  color: var(--bg-primary) !important;
+  font-size: 25px;
+  background-color: #ffffff !important;
+}
+
+.grid-header,
+.panel-body,
+.panel {
+  border-radius: 10px 10px unset unset !important;
+}
+
+.grid-body {
+  border-radius: 0 0 10px 10px !important;
+  padding-bottom: 20px !important;
+  background-color: white !important;
+}
+
+.grid-column-header-text {
+  color: var(--color-column-header-text) !important;
+}
+
+span.runtime-list-item,
+span.runtime-list-item-wrap {
+  color: var(--color-table-col-text) !important;
+}
+
+/* Boutons et onglets */
+[name="btn_Environments_tab"],
+[name="btn_Package_tab"],
+[name="btn_Validation_tab"] {
+  background-color: white;
+  color: var(--color-table-col-text);
+  border-radius: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.tab_selected {
+  border-bottom: 1px solid var(--bg-primary) !important;
+  color: var(--bg-primary) !important;
+  font-weight: bold;
+}
+
+/* Panneaux et formulaires */
+.theme-entry {
+  padding: 0;
+}
+
+.theme-entry .panel > .panel-body {
+  background-color: #fff;
+}
+
+.form {
+  background-color: var(--bg-form) !important;
+  border-radius: 10px !important;
+  max-height: 90vh;
+  height: 90vh;
+  overflow: auto;
+}
+
+[name="StatsUI"].panel,
+[name="ProgressUI"].panel,
+[name="StatsUI"] .panel-body,
+[name="ProgressUI"] .panel-body,
+[name="StatsUI"] .panel-body .panel-body-m,
+[name="ProgressUI"] .panel-body .panel-body-m {
+  background-color: var(--bg-form) !important;
+  border-radius: 10px !important;
+  overflow: auto;
+}
+
+/* User connecté */
+[name="dl_UserDisplayName"],
+[name="dl_UserEmail"] {
+  padding: 0 !important;
+}
+
+/* Invisibilité */
+.invisible {
+  visibility: hidden;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+.theme-entry
+  span
+  :not(.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor *) {
+  font-family: "Poppins" !important;
+}
+.base2.modal-element {
+  display: none !important;
+}
+.theme-entry {
+  --view-background-color: #ffffff !important;
+  --input-background-color: #ffffff !important;
+}
